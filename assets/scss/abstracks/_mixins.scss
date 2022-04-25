@@ -1,0 +1,54 @@
+@mixin flex( $align: flex-start, $justify: flex-start, $wrap: nowrap) {
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+    flex-wrap: $wrap;
+}
+
+@mixin for-size ($breakpoint) {
+    @if $breakpoint == 1920 {
+        @media (min-width: 1920px) {
+            @content;
+        }
+    }
+    @if $breakpoint == 1239 {
+        @media (max-width: 1239px) {
+            @content;
+        }
+    }
+    @if $breakpoint == 1200 {
+        @media (max-width: 1200px) {
+            @content;
+        }
+    }
+    @if $breakpoint == 1023 {
+        @media (max-width: 1023px) {
+            @content;
+        }
+    }
+    @if $breakpoint == 1024 {
+        @media (min-width: 1024px) {
+            @content;
+        }
+    }
+    @if $breakpoint == 992 {
+        @media (min-width: 992px) {
+            @content;
+        }
+    }
+    @if $breakpoint == 991 {
+        @media (max-width: 991px) {
+            @content;
+        }
+    }
+    @if $breakpoint == 739 {
+        @media (max-width: 739px) {
+            @content;
+        }
+    }
+    @if $breakpoint == 575 {
+        @media (max-width: 575px) {
+            @content;
+        }
+    }
+}

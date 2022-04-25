@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/scss/style2.css">
+    <link rel="stylesheet" type="text/css" href="./assets/fontawasome/css/all.min.css">
+    <title>Flight</title>
+</head>
+
+<body >
+
+    <div class="section-header">
+        <!-- HEADER : START -->
+        <header class="menu__content" id="menu">
+            <div class="container">
+                <nav class="navbar">
+                    <div class="navber__logo">
+                        <a href="#" class="logo__link">
+                            <img class="logo__image" src="./assets/images/header/baycungban.svg" alt="">
+                        </a>
+                        <a href="#" class="logo__link">
+                            <img class="logo__image" src="./assets/images/header/02.png" alt="">
+                        </a>
+                        <a href="#" class="logo__link">
+                            <img class="logo__image" src="./assets/images/header/01.png" alt="">
+                        </a>
+                    </div>
+                    <div class="navbar__collapse">
+                        <ul class="navbar__list">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/promotion.html">Promotion</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="/list.html">Flight Schedule</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/about">About us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/payment">Payment Guide</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="navbar__button">
+                        <button class="button__book">Booking now</button>
+                    </div>
+                    <button class="button__menu">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </nav>
+            </div>
+        </header>
+        <!-- HEADER : END -->
+
+        <!-- BANNER : START -->
+        <section class="section-banner">
+            <div class="container h-100">
+                <div class="banner__text">
+                    <h1 class="banner__title">
+                        Hello! <br />
+                        Where are <br />
+                        you <span>flying</span> to ...
+                    </h1>
+                </div>
+            </div>
+        </section>
+        <!-- BANNER : END -->
+    </div>
+
+    <!-- SEARCH : START -->
+    <section class="section-search">
+        <div class="container">
+            <div class="search__wraper">
+                <form action="post" class="search__form" id="search__form">
+                    <div class="search__top">
+                        <div class="search__select">
+                            <label for="one-way__round-trip" class="box__radio">One way / Round-trip
+                                <input checked type="radio" id="one-way__round-trip" name="type__ticket" value="one-way__round-trip">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label for="multi-city" class="box__radio">Multi-city
+                                <input type="radio" id="multi-city" name="type__ticket" value="multi-city">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="search__room">
+                            <p><span class="adult"></span>Adult, </p>
+                            <p><span class="children"></span>children</p>
+                            <div class="room__collapse">
+                                <label for="input-adult">Adult</label>
+                                <input type="number" id="input-adult" min="0"/>
+                                <br />
+                                <label for="input-children">Children</label>
+                                <input type="number" id="input-children" min="0"/>
+                            </div>
+                        </div>
+                        <select class="search__classification" name="search__classification" id="search__classification" value="2">
+                            <option value="1">Business Class</option>
+                            <option value="2" selected >Business Class1</option>
+                            <option value="3">Business Class2</option>
+                        </select>
+                    </div>
+                    <div class="search__bottom">
+                        <div class="row">
+                            <div class="col c-12 l-6">
+                                <div class="search__position">
+                                    <div class="box__position search__from">
+                                        <span>FROM</span>
+                                        <h2 class="from__title">Da Nang</h2>
+                                        <p>Quang Nam, Viet Nam</p>
+                                    </div>
+                                    <span class="icon-change">
+                                        <i class="fas fa-exchange-alt"></i>
+                                    </span>
+                                    <div class="box__position search__to">
+                                        <span>FROM</span>
+                                        <h2 class="from__title">Ho Chi Minh</h2>
+                                        <p>Viet Nam</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col c-12 l-6">
+                                <div class="search__date">
+                                    <div class="date search__departure">
+                                        <span>Departure</span>
+                                        <br />
+                                        <input type="date" id="date"  class="form__search-date"/>
+                                        <br />
+                                        <div class="sear__forward">
+                                            <span>Prev</span>
+                                            <span>Next</span>
+                                        </div>
+                                    </div>
+                                    <div class="date search__return">
+                                        <span>Return</span>
+                                        <br />
+                                        <input type="date" id="date"  class="form__search-date"/>
+                                        <br />
+                                        <div class="search__forward">
+                                            <span>Prev</span>
+                                            <span>Next</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="btn__search" class="btn__search" type="button" >
+                        <a href="/list.html">
+                            <span>Search Flights</span><i class="fas fa-long-arrow-alt-right"></i>
+                        </a>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- SEARCh : END -->
+
+    <!-- FOOTER : START -->
+    <section class="section-footer" id="footer">
+        <div class="container">
+            <div class="footer__wraper">
+                <div class="footer__contact">
+                    <ul class="contact__list">
+                        <li class="contact-item">
+                            <span><i class="footer__icon fas fa-phone-alt"></i></span>
+                            Call us: +84 908 02 02 58
+                        </li>
+                        <li class="contact-item">
+                            <span><i class="footer__icon fas fa-envelope"></i></span>
+                            Email: chucinog@gmail.com
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__social">
+                    <ul class="social__list">
+                        <li>
+                            <span>Follow us</span>
+                        </li>
+                        <li class="line"></li>
+                        <li>
+                            <span><i class="footer__icon fab fa-facebook-f"></i></span>
+                            <span><i class="footer__icon fab fa-instagram"></i></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER : END -->
+</body>
+
+<script src="./assets/js/script.js?r=9"></script>
+
+</html>

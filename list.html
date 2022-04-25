@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/scss/style2.css">
+    <link rel="stylesheet" type="text/css" href="./assets/fontawasome/css/all.min.css">
+    <title>Flight</title>
+</head>
+
+<body>
+
+    <div class="section-header page-list">
+        <!-- HEADER : START -->
+        <header class="menu__content" id="menu">
+            <div class="container">
+                <nav class="navbar">
+                    <div class="navber__logo">
+                        <a href="#" class="logo__link">
+                            <img class="logo__image" src="./assets/images/header/baycungban2.svg" alt="" />
+                        </a>
+                        <a href="#" class="logo__link">
+                            <img class="logo__image" src="./assets/images/header/02.png" alt="" />
+                        </a>
+                        <a href="#" class="logo__link">
+                            <img class="logo__image" src="./assets/images/header/01.png" alt="" />
+                        </a>
+                    </div>
+                    <div class="navbar__collapse">
+                        <ul class="navbar__list">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/promotion">Promotion</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="/list">Flight Schedule</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/about">About us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/payment">Payment Guide</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="navbar__button">
+                        <button class="button__book">Booking now</button>
+                    </div>
+                    <button class="button__menu">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </nav>
+            </div>
+        </header>
+        <!-- HEADER : END -->
+    </div>
+
+    <!-- SEARCH_PAGE-LIST : START -->
+    <section class="section__pl-search">
+        <div class="container">
+            <div class="pl-search__wraper">
+                <div class="pl-search__position">
+                    <div class="pl-search-box__position pl-search__from">
+                        <h2 class="from__title">Da Nang (DAD)</h2>
+                        <p>Fri, 22 Mar, 2022</p>
+                    </div>
+                    <span class="icon-change">
+                        <i class="fas fa-exchange-alt"></i>
+                    </span>
+                    <div class="pl-search-box__position pl-search__to">
+                        <h2 class="from__title">Ho Chi Minh (SGN)</h2>
+                        <p>Fri, 22 Mar, 2022</p>
+                    </div>
+                </div>
+                <div class="pl-search__select">
+                    <p>Round-trip</p>
+                    <p><span>02</span> Adult, <span>01</span>children</p>
+                    <p>Business Class</p>
+                </div>
+                <button type="button" class="pl-search__button">
+                    <span>Change Flights</span>
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- SEARCH_PAGE-LIST : END -->
+
+    <!-- CONTENT : START-->
+    <section class="pl__content">
+        <div class="container">
+            <div class="row">
+                <div class="col l-9">
+                    <div class="content__main">
+                        <div class="control__wraper">
+                            <span>Filter</span>
+                            <select class="control__select"  name="transit" id="transit">
+                                <option value="1">Transit</option>
+                                <option value="2">transit 2</option>
+                                <option value="3">transit 3</option>
+                            </select>
+                            <select class="control__select"  name="time" id="time">
+                                <option value="1">Time</option>
+                                <option value="2">transit 2</option>
+                                <option value="3">transit 3</option>
+                            </select>
+                            <select class="control__select"  name="airline" id="airline">
+                                <option value="1">Airline</option>
+                                <option value="2">transit 2</option>
+                                <option value="3">transit 3</option>
+                            </select>
+                            <select class="control__select" name="low-price" id="low-price">
+                                <option value="1">Low-Price</option>
+                                <option value="2">transit 2</option>
+                                <option value="3">transit 3</option>
+                            </select>
+                        </div>
+                        <div class="flight__list">
+                            <div class="flight flight--1">
+                                <div class="flight__top">
+                                    <div class="flight__company">
+                                        <a href="#" class="company-link">
+                                            <img src="./assets/images/flight/01.png" alt="" />
+                                            <h3>Bamboo Airways</h3>
+                                        </a>
+                                    </div>
+                                    <div class="flight__time">
+                                        <div class="time">
+                                            <h4>21:40</h4>
+                                            <p>DAD</p>
+                                        </div>
+                                        <div class="time__duration">
+                                            <h4>1h 30m</h4>
+                                            <p class="duration-line"></p>
+                                            <p>Direct</p>
+                                        </div>
+                                        <div class="time">
+                                            <h4>21:40</h4>
+                                            <p>DAD</p>
+                                        </div>
+                                    </div>
+                                    <div class="flight__necessary">
+                                        <div class="necessary-baggage">
+                                            <i class="fas fa-suitcase"></i>
+                                            <span>Baggage <strong>20kg</strong></span>
+                                        </div>
+                                        <div class="necessary-checkin">
+                                            <i class="fas fa-utensils"></i>
+                                            <span>In-flight <strong>Meal</strong> </span>
+                                        </div>
+                                    </div>  
+                                    <div class="flight__pricec">
+                                        <del>1,326,000 vnd</del>
+                                        <ins>1,326,000 vnd</ins>
+                                    </div>
+                                    <div class="flight__btn-choose">
+                                        <button type="button" class="btn-choose active">Choose</button>                
+                                    </div>
+                                </div>
+                                <div class="flight__btn-togger">
+                                    <button type="button" id="flight-detail" class="flight-detail btn__detail--1 active">Flight detail</button>
+                                    <button type="button" id="flight-info" class="fare-info btn__info--1">Fare info</button>
+                                </div>
+                                <div class="flight__collapse-detail flight__collapse-detail--1" >
+                                    <div class="row">
+                                        <div class="col c-12 l-5">
+                                            <div class="detail__time">
+                                                <div class="time">
+                                                    <div class="time__from">
+                                                        <h3 class="from__title">21:40</h3>
+                                                        <span class="from__date">11 Feb</span>
+                                                    </div>
+                                                    <div class="duration">1h 30m</div>
+                                                    <div class="block">
+                                                        <h3 class="from__title">21:40</h3>
+                                                        <span class="from__date">11 Feb</span>
+                                                    </div>
+                                                </div>
+                                                <div class="duration__line-straight"></div>
+                                                <div class="detail__position">
+                                                    <div class="position__block">
+                                                        <h3 class="position-titile">Da nang (DAD)</h3>
+                                                        <span>Da Nang Airport</span>
+                                                    </div>
+                                                    <div class="position__block">
+                                                        <h3 class="position-titile">Ho Chi Minh City (SGN)</h3>
+                                                        <span>Tansonnhat Intl</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col c-12 l-7">
+                                            <div class="flight__company">
+                                                <div class="block__company">
+                                                    <img class="company__image" src="./assets/images/flight/01.png" alt="" />
+                                                    <div class="company__text">
+                                                        <a href="#" class="text-link">
+                                                            <h3>Bamboo Airways</h3>
+                                                        </a>
+                                                        <div class="text-sub">
+                                                            <span>QH-183</span>
+                                                            <span>Economy</span>
+                                                        </div>
+                                                    </div>    
+                                                </div>
+                                            </div>
+                                            <div class="detail__necessary">
+                                                <ul class="necessary__list">
+                                                    <li class="necessary-item">Baggage <span>20kg</span></li>
+                                                    <li class="necessary-item">Baggage <span>20kg</span></li>
+                                                    <li class="necessary-item">Baggage <span>20kg</span></li>
+                                                    <li class="necessary-item">Baggage <span>20kg</span></li>
+                                                    <li class="necessary-item">Baggage <span>20kg</span></li>
+                                                    <li class="necessary-item">Baggage <span>20kg</span></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flight__collapse-info flight__collapse-info--1" hidden>
+                                    <div class="row">
+                                        <div class="col c-12 l-5">
+                                            <div class="detail__conditions">
+                                                <h2 class="detail__title title">Conditions</h2>
+                                                <div class="flight__company">
+                                                    <div class="block__company">
+                                                        <img class="company__image" src="./assets/images/flight/01.png" alt="" />
+                                                        <div class="company__text">
+                                                            <a href="#" class="text-link">
+                                                                <h3>Bamboo Airways</h3>
+                                                            </a>
+                                                            <div class="text-sub">
+                                                                <span>QH-183</span>
+                                                                <span>Economy</span>
+                                                            </div>
+                                                        </div>    
+                                                    </div>
+                                                </div>
+                                                <div class="conditions__position">
+                                                    <div>
+                                                      <p>Da Nang</p>
+                                                    </div>
+                                                    <div class="line"></div>
+                                                    <p>Ho Chi Minh City</p>
+                                                </div>
+                                                <span class="economy">Economy</span>
+                                                <p class="non">Non - Refundable</p>
+                                            </div>
+                                        </div>
+                                        <div class="col c-12 l-7">
+                                            <div class="detail__price">
+                                                <h2 class="price__title title">price details</h2>
+                                                <ul class="price__list">
+                                                    <li class="price-item">
+                                                        <p>Adult Basic Fare (x<span>1</span)></p>
+                                                        <strong>1.326.00vnd</strong>
+                                                    </li>
+                                                    <li class="price-item">
+                                                        <p>Tax</p>
+                                                        <p>included</p>
+                                                    </li>
+                                                    <li class="price-item">
+                                                        <p>Regular Total Proce</p>
+                                                        <p>1.326.00vnd</p>
+                                                    </li>
+                                                    <li class="price-item">
+                                                        <p class="save">Save</p>
+                                                        <p>-4.999vn</p>
+                                                    </li>
+                                                    <li class="price-item you-pay">
+                                                        <p>You pay</p>
+                                                        <p class="price-pay">1.326.00vnd</p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flight flight--2">
+                                <div class="flight__top">
+                                    <div class="flight__company">
+                                        <a href="#" class="company-link">
+                                            <img src="./assets/images/flight/01.png" alt="" />
+                                            <h3>Bamboo Airways</h3>
+                                        </a>
+                                    </div>
+                                    <div class="flight__time">
+                                        <div class="time">
+                                            <h4>21:40</h4>
+                                            <p>DAD</p>
+                                        </div>
+                                        <div class="time__duration">
+                                            <h4>1h 30m</h4>
+                                            <p class="duration-line"></p>
+                                            <p>Direct</p>
+                                        </div>
+                                        <div class="time">
+                                            <h4>21:40</h4>
+                                            <p>DAD</p>
+                                        </div>
+                                    </div>
+                                    <div class="flight__necessary">
+                                        <div class="necessary-baggage">
+                                            <i class="fas fa-suitcase"></i>
+                                            <span>Baggage <strong>20kg</strong></span>
+                                        </div>
+                                        <div class="necessary-checkin">
+                                            <i class="fas fa-utensils"></i>
+                                            <span>In-flight <strong>Meal</strong> </span>
+                                        </div>
+                                    </div>  
+                                    <div class="flight__pricec">
+                                        <del>1,326,000 vnd</del>
+                                        <ins>1,326,000 vnd</ins>
+                                    </div>
+                                    <div class="flight__btn-choose">
+                                        <button type="button" class="btn-choose active">Choose</button>                
+                                    </div>
+                                </div>
+                                <div class="flight__btn-togger">
+                                    <button type="button" id="flight-detail" class="flight-detail btn__detail--2 active">Flight detail</button>
+                                    <button type="button" id="flight-info" class="fare-info btn__info--2">Fare info</button>
+                                </div>
+                                <div class="flight__collapse-detail flight__collapse-detail--2" hidden>
+                                    <div class="row">
+                                        <div class="col c-12 l-5">
+                                            <div class="detail__time">
+                                                <div class="time">
+                                                    <div class="time__from">
+                                                        <h3 class="from__title">21:40</h3>
+                                                        <span class="from__date">11 Feb</span>
+                                                    </div>
+                                                    <div class="duration">1h 30m</div>
+                                                    <div class="block">
+                                                        <h3 class="from__title">21:40</h3>
+                                                        <span class="from__date">11 Feb</span>
+                                                    </div>
+                                                </div>
+                                                <div class="duration__line-straight"></div>
+                                                <div class="detail__position">
+                                                    <div class="position__block">
+                                                        <h3 class="position-titile">Da nang (DAD)</h3>
+                                                        <span>Da Nang Airport</span>
+                                                    </div>
+                                                    <div class="position__block">
+                                                        <h3 class="position-titile">Ho Chi Minh City (SGN)</h3>
+                                                        <span>Tansonnhat Intl</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col c-12 l-7">
+                                            <div class="flight__company">
+                                                <div class="block__company">
+                                                    <img class="company__image" src="./assets/images/flight/01.png" alt="" />
+                                                    <div class="company__text">
+                                                        <a href="#" class="text-link">
+                                                            <h3>Bamboo Airways</h3>
+                                                        </a>
+                                                        <div class="text-sub">
+                                                            <span>QH-183</span>
+                                                            <span>Economy</span>
+                                                        </div>
+                                                    </div>    
+                                                </div>
+                                            </div>
+                                            <div class="detail__necessary">
+                                                <ul class="necessary__list">
+                                                    <li class="necessary-item">Baggage <span>20kg</span></li>
+                                                    <li class="necessary-item">Baggage <span>20kg</span></li>
+                                                    <li class="necessary-item">Baggage <span>20kg</span></li>
+                                                    <li class="necessary-item">Baggage <span>20kg</span></li>
+                                                    <li class="necessary-item">Baggage <span>20kg</span></li>
+                                                    <li class="necessary-item">Baggage <span>20kg</span></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flight__collapse-info flight__collapse-info--2">
+                                    <div class="row">
+                                        <div class="col c-12 l-5">
+                                            <div class="detail__conditions">
+                                                <h2 class="detail__title title">Conditions</h2>
+                                                <div class="flight__company">
+                                                    <div class="block__company">
+                                                        <img class="company__image" src="./assets/images/flight/01.png" alt="" />
+                                                        <div class="company__text">
+                                                            <a href="#" class="text-link">
+                                                                <h3>Bamboo Airways</h3>
+                                                            </a>
+                                                            <div class="text-sub">
+                                                                <span>QH-183</span>
+                                                                <span>Economy</span>
+                                                            </div>
+                                                        </div>    
+                                                    </div>
+                                                </div>
+                                                <div class="conditions__position">
+                                                    <div>
+                                                      <p>Da Nang</p>
+                                                    </div>
+                                                    <div class="line"></div>
+                                                    <p>Ho Chi Minh City</p>
+                                                </div>
+                                                <span class="economy">Economy</span>
+                                                <p class="non">Non - Refundable</p>
+                                            </div>
+                                        </div>
+                                        <div class="col c-12 l-7">
+                                            <div class="detail__price">
+                                                <h2 class="price__title title">price details</h2>
+                                                <ul class="price__list">
+                                                    <li class="price-item">
+                                                        <p>Adult Basic Fare (x<span>1</span)></p>
+                                                        <strong>1.326.00vnd</strong>
+                                                    </li>
+                                                    <li class="price-item">
+                                                        <p>Tax</p>
+                                                        <p>included</p>
+                                                    </li>
+                                                    <li class="price-item">
+                                                        <p>Regular Total Proce</p>
+                                                        <p>1.326.00vnd</p>
+                                                    </li>
+                                                    <li class="price-item">
+                                                        <p class="save">Save</p>
+                                                        <p>-4.999vn</p>
+                                                    </li>
+                                                    <li class="price-item you-pay">
+                                                        <p>You pay</p>
+                                                        <p class="price-pay">1.326.00vnd</p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flight flight--3">
+                                <div class="flight__top">
+                                    <div class="flight__company">
+                                        <a href="#" class="company-link">
+                                            <img src="./assets/images/flight/01.png" alt="" />
+                                            <h3>Bamboo Airways</h3>
+                                        </a>
+                                    </div>
+                                    <div class="flight__time">
+                                        <div class="time">
+                                            <h4>21:40</h4>
+                                            <p>DAD</p>
+                                        </div>
+                                        <div class="time__duration">
+                                            <h4>1h 30m</h4>
+                                            <p class="duration-line"></p>
+                                            <p>Direct</p>
+                                        </div>
+                                        <div class="time">
+                                            <h4>21:40</h4>
+                                            <p>DAD</p>
+                                        </div>
+                                    </div>
+                                    <div class="flight__necessary">
+                                        <div class="necessary-baggage">
+                                            <i class="fas fa-suitcase"></i>
+                                            <span>Baggage <strong>20kg</strong></span>
+                                        </div>
+                                        <div class="necessary-checkin">
+                                            <i class="fas fa-utensils"></i>
+                                            <span>In-flight <strong>Meal</strong> </span>
+                                        </div>
+                                    </div>  
+                                    <div class="flight__pricec">
+                                        <del>1,326,000 vnd</del>
+                                        <ins>1,326,000 vnd</ins>
+                                    </div>
+                                    <div class="flight__btn-choose">
+                                        <button type="button" class="btn-choose">Choose</button>                
+                                    </div>
+                                </div>
+                                <div class="flight__btn-togger">
+                                    <button type="button" id="flight-detail" class="flight-detail btn__detail--3 active">Flight detail</button>
+                                    <button type="button" id="flight-info" class="fare-info btn__info--3">Fare info</button>
+                                </div>
+                                <div class="flight__collapse-detail flight__collapse-detail--3" hidden>
+                                    <div class="row">
+                                        <div class="col c-12 l-5">
+                                            <div class="detail__time">
+                                                <div class="time">
+                                                    <div class="time__from">
+                                                        <h3 class="from__title">21:40</h3>
+                                                        <span class="from__date">11 Feb</span>
+                                                    </div>
+                                                    <div class="duration">1h 30m</div>
+                                                    <div class="block">
+                                                        <h3 class="from__title">21:40</h3>
+                                                        <span class="from__date">11 Feb</span>
+                                                    </div>
+                                                </div>
+                                                <div class="duration__line-straight"></div>
+                                                <div class="detail__position">
+                                                    <div class="position__block">
+                                                        <h3 class="position-titile">Da nang (DAD)</h3>
+                                                        <span>Da Nang Airport</span>
+                                                    </div>
+                                                    <div class="position__block">
+                                                        <h3 class="position-titile">Ho Chi Minh City (SGN)</h3>
+                                                        <span>Tansonnhat Intl</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col c-12 l-7">
+                                            <div class="flight__company">
+                                                <div class="block__company">
+                                                    <img class="company__image" src="./assets/images/flight/01.png" alt="" />
+                                                    <div class="company__text">
+                                                        <a href="#" class="text-link">
+                                                            <h3>Bamboo Airways</h3>
+                                                        </a>
+                                                        <div class="text-sub">
+                                                            <span>QH-183</span>
+                                                            <span>Economy</span>
+                                                        </div>
+                                                    </div>    
+                                                </div>
+                                            </div>
+                                            <div class="detail__necessary">
+                                                <ul class="necessary__list">
+                                                    <li class="necessary-item">Baggage <span>20kg</span></li>
+                                                    <li class="necessary-item">Baggage <span>20kg</span></li>
+                                                    <li class="necessary-item">Baggage <span>20kg</span></li>
+                                                    <li class="necessary-item">Baggage <span>20kg</span></li>
+                                                    <li class="necessary-item">Baggage <span>20kg</span></li>
+                                                    <li class="necessary-item">Baggage <span>20kg</span></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flight__collapse-info flight__collapse-info--3" hidden>
+                                    <div class="row">
+                                        <div class="col c-12 l-5">
+                                            <div class="detail__conditions">
+                                                <h2 class="detail__title title">Conditions</h2>
+                                                <div class="flight__company">
+                                                    <div class="block__company">
+                                                        <img class="company__image" src="./assets/images/flight/01.png" alt="" />
+                                                        <div class="company__text">
+                                                            <a href="#" class="text-link">
+                                                                <h3>Bamboo Airways</h3>
+                                                            </a>
+                                                            <div class="text-sub">
+                                                                <span>QH-183</span>
+                                                                <span>Economy</span>
+                                                            </div>
+                                                        </div>    
+                                                    </div>
+                                                </div>
+                                                <div class="conditions__position">
+                                                    <div>
+                                                      <p>Da Nang</p>
+                                                    </div>
+                                                    <div class="line"></div>
+                                                    <p>Ho Chi Minh City</p>
+                                                </div>
+                                                <span class="economy">Economy</span>
+                                                <p class="non">Non - Refundable</p>
+                                            </div>
+                                        </div>
+                                        <div class="col c-12 l-7">
+                                            <div class="detail__price">
+                                                <h2 class="price__title title">price details</h2>
+                                                <ul class="price__list">
+                                                    <li class="price-item">
+                                                        <p>Adult Basic Fare (x<span>1</span)></p>
+                                                        <strong>1.326.00vnd</strong>
+                                                    </li>
+                                                    <li class="price-item">
+                                                        <p>Tax</p>
+                                                        <p>included</p>
+                                                    </li>
+                                                    <li class="price-item">
+                                                        <p>Regular Total Proce</p>
+                                                        <p>1.326.00vnd</p>
+                                                    </li>
+                                                    <li class="price-item">
+                                                        <p class="save">Save</p>
+                                                        <p>-4.999vn</p>
+                                                    </li>
+                                                    <li class="price-item you-pay">
+                                                        <p>You pay</p>
+                                                        <p class="price-pay">1.326.00vnd</p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flight flight--4">
+                                <div class="flight__top">
+                                    <div class="flight__company">
+                                        <a href="#" class="company-link">
+                                            <img src="./assets/images/flight/01.png" alt="" />
+                                            <h3>Bamboo Airways</h3>
+                                        </a>
+                                    </div>
+                                    <div class="flight__time">
+                                        <div class="time">
+                                            <h4>21:40</h4>
+                                            <p>DAD</p>
+                                        </div>
+                                        <div class="time__duration">
+                                            <h4>1h 30m</h4>
+                                            <p class="duration-line"></p>
+                                            <p>Direct</p>
+                                        </div>
+                                        <div class="time">
+                                            <h4>21:40</h4>
+                                            <p>DAD</p>
+                                        </div>
+                                    </div>
+                                    <div class="flight__necessary">
+                                        <div class="necessary-baggage">
+                                            <i class="fas fa-suitcase"></i>
+                                            <span>Baggage <strong>20kg</strong></span>
+                                        </div>
+                                        <div class="necessary-checkin">
+                                            <i class="fas fa-utensils"></i>
+                                            <span>In-flight <strong>Meal</strong> </span>
+                                        </div>
+                                    </div>  
+                                    <div class="flight__pricec">
+                                        <del>1,326,000 vnd</del>
+                                        <ins>1,326,000 vnd</ins>
+                                    </div>
+                                    <div class="flight__btn-choose">
+                                        <button type="button" class="btn-choose">Choose</button>                
+                                    </div>
+                                </div>
+                                <div class="flight__btn-togger">
+                                    <button type="button" id="flight-detail" class="flight-detail btn__detail--4 active">Flight detail</button>
+                                    <button type="button" id="flight-info" class="fare-info btn__info--4">Fare info</button>
+                                </div>
+                                <div class="flight__collapse-detail flight__collapse-detail--4" hidden>
+                                    <div class="row">
+                                        <div class="col c-12 l-5">
+                                            <div class="detail__time">
+                                                <div class="time">
+                                                    <div class="time__from">
+                                                        <h3 class="from__title">21:40</h3>
+                                                        <span class="from__date">11 Feb</span>
+                                                    </div>
+                                                    <div class="duration">1h 30m</div>
+                                                    <div class="block">
+                                                        <h3 class="from__title">21:40</h3>
+                                                        <span class="from__date">11 Feb</span>
+                                                    </div>
+                                                </div>
+                                                <div class="duration__line-straight"></div>
+                                                <div class="detail__position">
+                                                    <div class="position__block">
+                                                        <h3 class="position-titile">Da nang (DAD)</h3>
+                                                        <span>Da Nang Airport</span>
+                                                    </div>
+                                                    <div class="position__block">
+                                                        <h3 class="position-titile">Ho Chi Minh City (SGN)</h3>
+                                                        <span>Tansonnhat Intl</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col c-12 l-7">
+                                            <div class="flight__company">
+                                                <div class="block__company">
+                                                    <img class="company__image" src="./assets/images/flight/01.png" alt="" />
+                                                    <div class="company__text">
+                                                        <a href="#" class="text-link">
+                                                            <h3>Bamboo Airways</h3>
+                                                        </a>
+                                                        <div class="text-sub">
+                                                            <span>QH-183</span>
+                                                            <span>Economy</span>
+                                                        </div>
+                                                    </div>    
+                                                </div>
+                                            </div>
+                                            <div class="detail__necessary">
+                                                <ul class="necessary__list">
+                                                    <li class="necessary-item">Baggage <span>20kg</span></li>
+                                                    <li class="necessary-item">Baggage <span>20kg</span></li>
+                                                    <li class="necessary-item">Baggage <span>20kg</span></li>
+                                                    <li class="necessary-item">Baggage <span>20kg</span></li>
+                                                    <li class="necessary-item">Baggage <span>20kg</span></li>
+                                                    <li class="necessary-item">Baggage <span>20kg</span></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flight__collapse-info flight__collapse-info--4" hidden>
+                                    <div class="row">
+                                        <div class="col c-12 l-5">
+                                            <div class="detail__conditions">
+                                                <h2 class="detail__title title">Conditions</h2>
+                                                <div class="flight__company">
+                                                    <div class="block__company">
+                                                        <img class="company__image" src="./assets/images/flight/01.png" alt="" />
+                                                        <div class="company__text">
+                                                            <a href="#" class="text-link">
+                                                                <h3>Bamboo Airways</h3>
+                                                            </a>
+                                                            <div class="text-sub">
+                                                                <span>QH-183</span>
+                                                                <span>Economy</span>
+                                                            </div>
+                                                        </div>    
+                                                    </div>
+                                                </div>
+                                                <div class="conditions__position">
+                                                    <div>
+                                                      <p>Da Nang</p>
+                                                    </div>
+                                                    <div class="line"></div>
+                                                    <p>Ho Chi Minh City</p>
+                                                </div>
+                                                <span class="economy">Economy</span>
+                                                <p class="non">Non - Refundable</p>
+                                            </div>
+                                        </div>
+                                        <div class="col c-12 l-7">
+                                            <div class="detail__price">
+                                                <h2 class="price__title title">price details</h2>
+                                                <ul class="price__list">
+                                                    <li class="price-item">
+                                                        <p>Adult Basic Fare (x<span>1</span)></p>
+                                                        <strong>1.326.00vnd</strong>
+                                                    </li>
+                                                    <li class="price-item">
+                                                        <p>Tax</p>
+                                                        <p>included</p>
+                                                    </li>
+                                                    <li class="price-item">
+                                                        <p>Regular Total Proce</p>
+                                                        <p>1.326.00vnd</p>
+                                                    </li>
+                                                    <li class="price-item">
+                                                        <p class="save">Save</p>
+                                                        <p>-4.999vn</p>
+                                                    </li>
+                                                    <li class="price-item you-pay">
+                                                        <p>You pay</p>
+                                                        <p class="price-pay">1.326.00vnd</p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col c-0 l-3">
+                    <div class="sidebar">
+                        <h2 class="sidebar__title">your flights</h2>
+                        <div class="sidebar__content">
+                            <div class="block__company">
+                                <div class="company__image">
+                                    <span class="bg-gray">01</span>
+                                </div>
+                                <div class="company__text">
+                                    <span>Fri, 11 Feb, 2022</span>
+                                    <div class="text-sub">
+                                        <h2>Da Nang - Ho Chi Minh</h2>
+                                    </div>
+                                </div>    
+                            </div>
+                            <div class="block__company">
+                                <img class="company__image" src="./assets/images/flight/01.png" alt="" />
+                                <div class="company__text">
+                                    <a href="#" class="text-link">
+                                        <h3>Bamboo Airways</h3>
+                                    </a>
+                                    <div class="text-sub">
+                                        <a href="#" class="detail">Detail</a>
+                                    </div>
+                                </div>    
+                            </div>
+                            <div class="flight__time">
+                                <div class="time">
+                                    <h4>21:40</h4>
+                                    <p>DAD</p>
+                                </div>
+                                <div class="time__duration">
+                                    <h4>1h 30m</h4>
+                                    <p class="duration-line"></p>
+                                    <p>Direct</p>
+                                </div>
+                                <div class="time">
+                                    <h4>21:40</h4>
+                                    <p>DAD</p>
+                                </div>
+                            </div>
+                            <div class="block__company">
+                                <div class="company__image">
+                                    <span class="bg-blue">02</span>
+                                </div>
+                                <div class="company__text">
+                                    <span>Fri, 11 Feb, 2022</span>
+                                    <div class="text-sub">
+                                        <h2>Da Nang - Ho Chi Minh</h2>
+                                    </div>
+                                </div>    
+                            </div>
+                            <div class="sidebar__btn">
+                                <button type="button" class="btn__change">Change departure flight</button>
+                            </div>
+                        </div>
+                        <div class="sidebar__total">
+                            <p>Subtotal</p>
+                            <span class="price-pay">1.326.00vnd</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- CONTENT : END -->
+
+    <!-- FOOTER : START -->
+    <section class="section-footer pl__content" id="footer">
+        <div class="container">
+            <div class="footer__wraper">
+                <div class="footer__contact">
+                    <ul class="contact__list">
+                        <li class="contact-item">
+                            <span><i class="footer__icon fas fa-phone-alt"></i></span>
+                            Call us: +84 908 02 02 58
+                        </li>
+                        <li class="contact-item">
+                            <span><i class="footer__icon fas fa-envelope"></i></span>
+                            Email: chucinog@gmail.com
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__social">
+                    <ul class="social__list">
+                        <li>
+                            <span>Follow us</span>
+                        </li>
+                        <li class="line"></li>
+                        <li>
+                            <span><i class="footer__icon fab fa-facebook-f"></i></span>
+                            <span><i class="footer__icon fab fa-instagram"></i></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER : END -->
+</body>
+
+<script src="./assets/js/list.js?r=9"></script>
+
+</html>

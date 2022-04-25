@@ -1,0 +1,74 @@
+
+.menu__content {
+    position: fixed;
+    z-index: 999;
+    top: 0; left: 0; right: 0;
+    background-color: $color-bg-header;
+    .navbar {
+        padding: 2rem 0;
+        @include flex(center, space-between);
+        .navbar__collapse {
+            @include for-size(1023) {
+                display: none;
+                position: absolute;
+                top: 110%;
+                right: 1rem;
+                width: 30rem;
+                border-radius: 0.5rem;
+                background-color: $color-01;
+            }
+        }
+        .navbar__list {
+            @include flex(center, center);
+            gap: 3rem;
+            @include for-size(1023) {
+                flex-direction: column;
+                gap: 2rem;
+            }
+        } 
+        .logo__link + .logo__link {
+            margin-left: 1.5rem;
+        }
+        .button__book {
+            padding: 1rem 1.5rem;
+            background-color: $color-blue;
+            color: white;
+            border-radius: 1.2rem;
+            font-weight: 600;
+        }
+        .button__menu {
+            width: 3rem;
+            height: 3rem;
+            @include flex(center, center);
+            background-color: $color-blue;
+            color: $color-01;
+            border-radius: 0.5rem;
+            @include for-size(1024) {
+                display: none;
+            }
+        }
+    }
+}
+
+// PAGE LIST 
+.section-header.page-list {
+    .menu__content {
+        background-color: $color-blue;
+    }
+    .nav-link {
+        padding: 1rem 1.5rem;
+        border-radius: 10rem;
+        color: $color-01;
+        @include for-size(1023) {
+            color: black;
+        }
+        &.active {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+    }
+    
+    .button__book {
+        background-color: $color-01;
+        color: $color-blue;
+    }
+}

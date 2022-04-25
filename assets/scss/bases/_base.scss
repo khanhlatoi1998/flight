@@ -1,0 +1,129 @@
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font: {
+    size: 1.4rem;
+    weight: 400;
+    family: 'Arial', sans-serif;
+  }
+  background-color: $color-01;
+  overflow-x: hidden;
+  line-height: 1.8rem;
+  // @include for-size(575) {
+  //   font-size: 1.6rem;
+  // }
+}
+section,
+header,
+footer {
+  max-width: 192rem;
+  margin: 0 auto;
+}
+
+// .container {
+//   @include for-size(1200) {
+//     padding-left: 0;
+//     padding-right: 0;
+//   }
+// }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+dl,
+dt,
+dd,
+table,
+tr,
+td,
+figure,
+figcaption,
+label {
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  // line-height: 1;
+  font-weight: 600;
+  font-size: inherit;
+  text-transform: uppercase;
+  // font-weight: inherit;
+}
+a {
+  color: inherit;
+  display: inline-block;
+  text-decoration: none;
+  // @include transition(all 0.3s ease);
+  &:hover {
+    text-decoration: none;
+    color: inherit;
+  }
+  &:focus,
+  &:active {
+    outline: none !important;
+  }
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+select {
+  border: none;
+  outline: none;
+}
+
+button {
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  &:focus,
+  &:active,
+  &:hover,
+  &:visited,
+  &:link {
+    // outline: none;
+    // border: none;
+    // border-radius: 0px;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+
+.link {
+  &:hover {
+    color: $color-02;
+  }
+}

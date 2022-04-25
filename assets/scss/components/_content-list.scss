@@ -1,0 +1,415 @@
+%dot-blue {
+    content: "";
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    top: 0;
+    transform: translate(50%, -50%);
+    background-color: $color-blue;
+    border-radius: 50%;
+    right: 0;
+}
+
+%dot-white {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    top: 0;
+    border: 1px solid $color-blue;
+    transform: translate(-50%, -50%);
+    background-color: $color-01;
+    border-radius: 50%;
+    left: 0;
+}
+
+
+.pl__content {
+    padding-top: 1.5rem;
+    padding-bottom: 5rem;
+    background-color: #F4F2F9;
+    .company-link {
+        @include flex(center, center);  
+        height: 100%;
+        gap: 1rem;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    .flight__time {
+        @include flex(flex-start, center);
+        gap: 1rem; 
+    }
+    .time {
+        text-align: center;
+        flex-grow: 1;
+        p {
+            font-weight: 600;
+            margin-top: 1rem;
+            padding : 0.5rem 0.7rem;
+            background-color: $color-bg-gray;
+            border-radius: 10rem;
+            opacity: 1;
+            font-size: 1rem;
+        }
+    }
+    .time__duration {
+        flex-grow: 2;
+        text-align: center;
+        padding: 0 2rem;
+        width: 12rem;
+    }
+    .duration-line {
+        margin: 0.5rem 0;
+        width: 100%;
+        height: 1px;
+        background-color: $color-blue;
+        position: relative;
+    }
+    .duration-line::before {
+        @extend %dot-white;
+    }
+    .duration-line::after {
+        @extend %dot-blue ;
+    }
+    .flight__necessary {
+        @include flex(flex-start, space-between);  
+        gap: 1rem;
+        flex-direction: column;
+        i {
+            width: 2rem;
+            text-align: left;
+        }
+        strong {
+            color: $color-blue;
+        }
+    }
+    .flight__pricec {
+        @include flex(center, space-between);
+        flex-direction: column;
+        font-weight: 600;
+        del {
+            color: $color-text-gray-04;
+        }
+        ins {
+            color: $color-orange;
+            text-decoration: none;
+        }
+    }
+    .flight__btn-choose {
+       @include flex(center, center)
+    }
+    .btn-choose {
+        color: $color-orange;
+        padding: 6px 1.5rem;
+        background-color: $color-pink;
+        border-radius: 1.2rem;
+        &.active {
+            background-color: $color-orange;
+            color: $color-01;
+        }
+    }
+    .flight__btn-togger {
+        font-size: 1.2rem;
+        margin-top: 3rem;
+        position: relative;
+        button {
+            padding: 0.5rem;
+            color: $color-text-gray-04;
+            text-transform: uppercase;
+            background-color: transparent;
+            + button {
+                margin-left: 3rem;
+            }
+            &.active {
+                color: $color-blue;
+                text-decoration: underline;
+            }
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            left: 30%;
+            right: 0;
+            top: 50%;
+            transform: translate(0, -50%);
+            height: 2px;
+            background-color: $color-text-gray-01;
+            @include for-size(1200) {
+                left: 50%;
+            }
+            @include for-size(739) {
+                display: none;
+            }
+        }
+    }
+    .flight__collapse-detail {
+        padding-bottom: 2rem;
+        // display: none;
+    }
+    .detail__time {
+        @include flex(stretch, flex-start);
+        gap: 2rem;
+        height: 100%;
+        @include for-size(1023) {
+            gap: 10rem;
+            justify-content: center;
+        }
+        @include for-size(575) {
+            gap: 3rem;
+            justify-content: center;
+        }
+        .time {
+            @include flex(center, space-between);
+            flex-direction: column;
+            flex-grow: 0;
+            gap: 3rem;
+            height: 100%;
+            h3 {
+                font-weight: 600;
+            }
+            span {
+                font-size: 1.2rem;
+            }
+        }
+        .duration__line-straight {
+            width: 1px;
+            height: 85%;
+            background-color: $color-blue;
+            position: relative;
+            margin-top: 1rem;;
+        }
+        .duration__line-straight::before {
+            @extend %dot-white;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -50%) ;
+        }
+        .duration__line-straight::after {
+            @extend %dot-blue;
+            top: 100%;
+            left: 50%;
+            transform: translate(-50%, -50%); 
+        }
+    }
+    .detail__position {
+        height: 100%;
+        padding-left: 1rem;
+        @include flex(flex-start, space-between);
+        flex-direction: column;
+
+    }
+    .block__company {
+        @include flex(center);
+        @include for-size(1023) {
+            margin-top: 2rem;
+        }
+        gap: 1rem;
+        span {
+            font-size: 1.2rem;
+            position: relative;
+            margin-right: 2rem;
+            + span::before {
+                content: "";
+                position: absolute;
+                width: 3px;
+                height: 3px;
+                border-radius: 50%;
+                background-color: black;
+                transform: translate(0, -50%);
+                top: 50%;
+                left: -1.5rem;
+            }
+        }
+    }
+    .necessary__list {
+        background-color: $color-bg-gray;
+        padding: 1.5rem;
+        border-radius: 1.2rem;
+        margin-top: 1.5rem;
+        @include flex(flex-start, flex-start, wrap);
+        gap: 2rem 0;
+        .necessary-item {
+            flex: 0 0 50%;
+            span {
+                color: $color-blue;
+            }
+        }
+    }
+    .flight__collapse-info {
+        margin-top: 3rem;
+        .row {
+            gap: 2rem 0;
+        }
+        .title {
+            padding-bottom: 1.5rem;
+        }
+        .conditions__position {
+            margin-top: 2rem;
+            @include flex(center);
+            gap: 1rem;
+            .line {
+                width: 5rem;
+                height: 1px;
+                background-color: $color-blue;
+                position: relative;
+                &::before {
+                    @extend %dot-white;
+                    left: 0;
+                    top: 0;
+                }
+                &::after {
+                    @extend %dot-blue;
+                    right: 0;
+                    top: 0;
+                }
+            }
+        }
+        .economy {
+            color: $color-blue; 
+        }
+        .non {
+            margin-top: 3rem;
+        }
+        .price__list {
+            padding-right: 5rem;
+            .price-item {
+                @include flex(center, space-between);
+                + .price-item {
+                    margin-top: 1.5rem;
+                }
+                .save {
+                    color: $color-orange;
+                }
+            }
+            .you-pay {
+                position: relative;
+                border-top : 1px solid $color-text-gray-01;
+                padding-top: 1rem;  
+            }
+        }
+    }
+    .price-pay {
+        color: $color-orange;
+        font-weight: 600;
+    }
+    .sidebar {
+        border-radius: 1.2rem;
+        background-color: $color-01;
+        overflow: hidden;
+        .detail {
+            color: $color-blue;
+            text-decoration: underline;
+            font-weight: 600;
+        }
+        .sidebar__title {
+            padding: 2rem;
+        }
+        .sidebar__content {
+            padding: 2rem;
+            padding-top: 0;
+            border-top: 2px solid $color-text-gray-01;
+        }
+        .block__company {
+            margin-top: 2rem;
+        }
+        .company__image {
+            span {
+                padding: 1rem;
+                border-radius: 50%;
+                background-color: $color-text-gray-06;
+                color: $color-01;
+            }
+            .bg-blue {
+                background-color: $color-blue;
+            }
+        }
+        .flight__time {
+            margin-top: 2rem;
+        }
+        .sidebar__btn {
+            padding: 2rem 0;
+            border-bottom: 1px solid $color-text-gray-01; 
+            .btn__change {
+                border-radius: 1.2rem;
+                width: 100%;
+                padding: 1rem 0; 
+                background-color: $color-border-gray;
+                color: $color-blue;
+                font-size: 1.2rem;
+                font-weight: 600;
+            }
+        }
+        .sidebar__total {
+            background-color: $color-text-gray-01;
+            padding: 2rem;
+            span {
+                display: inline-block;
+                margin-top : 0.5rem;
+            }
+        }
+    }
+}
+  
+.control__wraper {
+    @include flex(center, flex-end, wrap);
+    padding-bottom: 0.5rem;
+    gap: 1rem 0;
+    span {
+        margin-right: 1.5rem;
+        font-size: 1.2rem;
+        font-weight: 600;   
+        opacity: 0.5;
+    }
+    select {
+        + select {
+            margin-left: 0.5rem;
+        }
+        @extend %select;
+        width: 12rem;
+        padding: 0.8rem 1.5rem;
+        background-color: $color-01;
+        border-radius: 1.2rem;
+        color: $color-text-gray-06;
+        background-position: 90% ;
+    }
+}
+
+.flight {
+    padding: 1.5rem 2rem 2rem 1.5rem;
+    background-color: $color-01;
+    border-radius: 1.2rem;
+    + .flight {
+        margin-top: 1rem;
+    }
+    .flight__collapse-detail {
+        margin-top: 2rem;
+
+    }
+    .flight__top {
+        @include flex(stretch, space-between, wrap);
+        gap: 1rem;
+        @include for-size(1239) {
+            .flight__company {
+                width: 100%;
+                @include flex(center, center);  
+            }
+            .flight__time {
+                width: 100%;
+                @include flex(flex-start, center);
+            }
+            .flight__necessary {
+                width: 100%;
+                @include flex(center, space-between);
+            }
+            .flight__pricec {
+                width: 100%;
+                @include flex(center, space-between);
+            }
+            .flight__btn-choose {
+                width: 100%;
+                @include flex(center, center)
+            }
+        }
+    }
+}
+
